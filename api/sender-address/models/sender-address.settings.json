@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sender_addresses",
+  "info": {
+    "name": "senderAddress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postCode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    }
+  }
+}

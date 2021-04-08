@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoices",
+  "info": {
+    "name": "invoice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "invoiceId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "paymentDue": {
+      "type": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "paymentTerms": {
+      "type": "integer"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "clientEmail": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "sender_address": {
+      "model": "sender-address"
+    },
+    "client_address": {
+      "model": "client-address"
+    },
+    "item_list": {
+      "model": "item-list"
+    },
+    "total": {
+      "type": "decimal"
+    }
+  }
+}

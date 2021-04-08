@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_lists",
+  "info": {
+    "name": "itemList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "items": {
+      "collection": "item"
+    }
+  }
+}

@@ -41,11 +41,11 @@
     "client_address": {
       "model": "client-address"
     },
-    "item_list": {
-      "model": "item-list"
-    },
     "total": {
       "type": "decimal"
+    },
+    "items": {
+      "collection": "item"
     }
   }
 }
